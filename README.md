@@ -271,13 +271,16 @@ This project is released under the **MIT License**. See [LICENSE](LICENSE) for d
 
 ## Contact
 
-For questions, suggestions, or issues related to Random Survival Stacking, please open an issue in this repository or contact the corresponding author.
+For questions, suggestions, or issues related to Random Survival Stacking, please open an issue in this repository or contact the corresponding author (wangsures@foxmail.com).
 
 ---
 
 ## Acknowledgements
 
 We thank the researchers and data providers who contributed to the publicly available datasets used in this study.
+
+
+## By the way, we already have an R implementation of Random Stacking, but unfortunately, we don’t currently have enough time to transfer the methods to Python. Please feel free to contact me if you’re interested in this work. 
 
 ---
 
