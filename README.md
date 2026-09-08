@@ -280,7 +280,7 @@ We thank the researchers and data providers who contributed to the publicly avai
 
 ---
 
-By the way, we already have an R implementation of Random Stacking, but unfortunately, we don’t currently have enough time to transfer the methods to Python. Please feel free to contact me if you’re interested in this work. 
+**By the way, we already have an R implementation of Random Stacking, but unfortunately, we don’t currently have enough time to transfer the methods to Python. Please feel free to contact me if you’re interested in this work. **
 
 ---
 
