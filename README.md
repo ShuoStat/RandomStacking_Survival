@@ -125,9 +125,6 @@ The simulations examine factors including:
 * Sample size
 * Signal-to-noise ratio
 * Correlation among predictors/base learners
-* Ensemble stability
-* High-dimensionality
-* Survival outcome characteristics
 
 The simulation framework was designed to identify both the **advantages and limitations** of random survival stacking.
 
@@ -135,7 +132,6 @@ In general, Random Survival Stacking showed the greatest advantage in settings w
 
 * Small sample sizes
 * Weak signals
-* High-dimensional predictors
 * Greater prediction variance
 
 In contrast, when the ensemble was already highly stable, particularly under large-sample settings, traditional stacking could perform better.
@@ -151,7 +147,6 @@ Across the evaluated real-world cancer datasets, Random Survival Stacking genera
 * Improved predictive accuracy
 * Greater prediction stability
 * More robust performance across datasets
-* Better integration of heterogeneous clinical and omics information
 
 Compared with traditional stacking, the proposed method showed consistent improvements in survival prediction performance across the evaluated datasets.
 
@@ -242,57 +237,6 @@ Contains summarized results, tables, figures, and other outputs used to evaluate
 
 ---
 
-## Reproducibility
-
-The analyses can be reproduced by following the scripts in the `codes/` directory.
-
-A typical workflow is:
-
-```text
-1. Prepare the datasets
-        ↓
-2. Preprocess clinical and omics variables
-        ↓
-3. Fit base learners
-        ↓
-4. Generate randomized bootstrap/feature subsets
-        ↓
-5. Generate base-layer predictions
-        ↓
-6. Aggregate predictions
-        ↓
-7. Fit the NLL-Ridge meta-learner
-        ↓
-8. Generate survival predictions
-        ↓
-9. Evaluate predictive performance
-       ↓
-10. Summarize simulation and real-data results
-```
-
-For reproducibility, we recommend recording:
-
-* R/Python version
-* Package versions
-* Random seeds
-* Number of bootstrap samples
-* Number of randomly selected features
-* Cross-validation settings
-* Hyperparameter tuning settings
-
----
-
-## Performance Evaluation
-
-The methods are evaluated using survival prediction metrics such as:
-
-* **C-index**
-* **Integrated Area Under the Curve (iAUC)**
-* **Integrated Brier Score (IBS)**
-* **Integrated Negative Log-Likelihood (iNLL)**
-
-These metrics provide complementary assessments of discrimination, calibration, and overall survival prediction accuracy.
-
 ---
 
 ## When Should Random Survival Stacking Be Used?
@@ -318,41 +262,6 @@ Therefore, the proposed method should be considered a **variance-control strateg
 
 ---
 
-## Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/ShuoStat/RandomStacking_Survival.git
-cd RandomStacking_Survival
-```
-
-Then follow the analysis scripts in:
-
-```text
-codes/
-```
-
-The exact software dependencies and analysis-specific instructions should be specified in the corresponding scripts.
-
----
-
-## Citation
-
-If you use Random Survival Stacking, please cite the corresponding methodological paper:
-
-```bibtex
-@article{Wang2026RandomStackingSurvival,
-  title   = {Random Survival Stacking for High-Dimensional Survival Prediction},
-  author  = {Wang, Shuo},
-  journal = {...},
-  year    = {2026}
-}
-```
-
-> **Please replace the citation above with the final bibliographic information once the manuscript has been published or formally submitted.**
-
----
 
 ## License
 
