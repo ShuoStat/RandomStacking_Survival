@@ -235,7 +235,6 @@ Contains intermediate outputs generated during the computational analyses.
 
 Contains summarized results, tables, figures, and other outputs used to evaluate the proposed framework.
 
----
 
 ---
 
@@ -279,6 +278,7 @@ For questions, suggestions, or issues related to Random Survival Stacking, pleas
 
 We thank the researchers and data providers who contributed to the publicly available datasets used in this study.
 
+---
 
 ## By the way, we already have an R implementation of Random Stacking, but unfortunately, we don’t currently have enough time to transfer the methods to Python. Please feel free to contact me if you’re interested in this work. 
 
